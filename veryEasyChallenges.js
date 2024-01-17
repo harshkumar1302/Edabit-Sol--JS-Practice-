@@ -14,7 +14,8 @@ Create a function that takes two numbers as arguments and returns their sum.
 function addition(a, b) {
     return a + b;
 }
-console.log(addition(2, 9));
+var sum = addition(2, 9);
+console.log(`The sum of the given two numbers are = ${sum}`);
 
 
 /* Challenge 02
