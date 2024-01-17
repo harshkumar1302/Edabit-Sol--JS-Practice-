@@ -165,3 +165,42 @@ function points(twoPointers, threePointers) {
 var twoPointers = 5;
 var threePointers = 2;
 console.log(`The score added by the 2 pointers and 3 pointers are ${points(twoPointers, threePointers)}.`);
+
+
+/*Buggy Code (Part 7)
+Mubashir wants to swap two given numbers!
+It is not returning the right values. Can you help him fix it?
+*/
+
+function swapNum(a, b) {
+    let c = a;
+    a = b;
+    b = c;
+    return [a, b];
+}
+
+console.log(swapNum(45, 56));
+
+/* Using the "&&" Operator
+JavaScript has a logical operator &&. The && operator takes two boolean values, and returns true if both values are true.
+
+Consider a && b:
+a is checked if it is true or false.
+If a is false, false is returned.
+b is checked if it is true or false.
+If b is false, false is returned.
+Otherwise, true is returned (as both a and b are therefore true ).
+The && operator will only return true for true && true.
+
+Make a function using the && operator.
+*/
+
+function and(a, b) {
+    if (a == true && b == true) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(and(true, true));
